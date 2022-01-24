@@ -1,38 +1,112 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Inter", sans-serif;
+    box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+    background-color: grey;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+nav #globe-icon {
+    width: 25px;
+    margin: 5px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+nav p {
+    margin: 4px;
 }
 
-.App-link {
-  color: #61dafb;
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    background-color: #f55a5a;
+    width: 100%;
+    color: #fff;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.journal {
+    width: 550px;
+    min-width: 510px;
+    height: 704px;
+    background-color: #fff;
+    margin: auto;
+    width: 50%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.place .place-image {
+    width: 125px;
+    border-radius: 5px;
+}
+
+.place {
+    display: flex;
+    margin: auto;
+
+    flex-direction: row;
+    width: 500px;
+    border-radius: 5px;
+    background-color: rgb(245, 244, 244);
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.place-details {
+    margin: 18px;
+}
+
+.place-location {
+    display: flex;
+    margin-bottom: 2px;
+}
+
+.place-location p {
+    margin-left: 9px;
+    font-weight: 300;
+    font-size: 10.24px;
+    line-height: 12px;
+    letter-spacing: 0.17em;
+}
+
+.place-location a {
+    margin-left: 3px;
+    font-size: 10.24px;
+    line-height: 12px;
+    text-decoration: none;
+    color: #918e9b;
+    cursor: pointer;
+}
+
+.place-location i {
+    width: 7px;
+}
+
+.place-description h2 {
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 30px;
+
+    color: #2b283a;
+}
+
+.place-description h3 {
+    font-weight: bold;
+    font-size: 10.24px;
+    line-height: 12px;
+    color: #2b283a;
+    margin-top: 7px;
+    margin-bottom: 7px;
+}
+
+.place-description p {
+    font-size: 10.24px;
+    line-height: 150%;
+    color: #2b283a;
 }
